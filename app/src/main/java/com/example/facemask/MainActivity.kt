@@ -16,15 +16,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(Binding.root)
+        //依距離
         Binding.navLayout.setOnClickListener {
-            val intent = Intent(this,MapActivity::class.java)
-            intent.putExtra("GPSState",true)
+            val intent = Intent(this,Navigate::class.java)
             startActivity(intent)
         }
-
+        //依地圖縣市城鎮
         Binding.placeLayout.setOnClickListener {
             val intent = Intent(this,MapActivity::class.java)
-            intent.putExtra("GPSState",false)
             startActivity(intent)
         }
     }

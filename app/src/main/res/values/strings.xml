@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">口罩地圖</string>
     <string name="title_activity_google_maps">Map</string>
+    <string name="title_activity_navigate">Map</string>
 </resources>

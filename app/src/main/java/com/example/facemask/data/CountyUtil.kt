@@ -448,7 +448,7 @@ object CountyUtil {
                             "南竿鄉"
                     )
             )
-
+    private val distance = listOf("1公里距離","3公里距離")
     /**
      * 獲取所有縣市名稱
      * @return 返回所有縣市名稱
@@ -478,4 +478,10 @@ object CountyUtil {
         val index = counties.indexOf(countryname)
         return towns[index].indexOf(town)
     }
+
+
+    fun getDistance() = distance
+
+
+
 }

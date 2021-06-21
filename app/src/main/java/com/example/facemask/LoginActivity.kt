@@ -55,6 +55,7 @@ class LoginActivity : AppCompatActivity() {
                 Log.d("Map","pharmacy : $respons")
                 val pharmacyInfo = Gson().fromJson(respons, PharmacyInfo::class.java)
                 PharmacyAllData.setAllData(pharmacyInfo)
+                Log.d("alldata",pharmacyInfo.toString())
                 runOnUiThread {
                     Binding.progressbar.visibility =View.GONE
                     Binding.loginText.text = "載入完成"
